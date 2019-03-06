@@ -162,7 +162,7 @@ void Game::draw() {
 }
 
 void Game::automove() {
-    if(clock.getElapsedTime().asMilliseconds() >= 100s) {
+    if(clock.getElapsedTime().asMilliseconds() >= 100) {
         sf::Vector2f vec = stick.getPosition() - player.getPosition();
         if(vec.x > 0) {
             player.move(Player::Right);
